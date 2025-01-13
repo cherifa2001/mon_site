@@ -1,0 +1,102 @@
+/* Style de la page principale */
+
+body {
+    background-image: url("https://static3.depositphotos.com/1003579/177/i/450/depositphotos_1772683-stock-photo-watercolor-paper-texture.jpg");
+} /* Image de fond de la page principale */
+
+
+#titre_principal {
+    text-align: center;
+    font-size: 500%;
+    font-family: fantasy;
+    background:rgb(65, 85, 67);
+    margin-top: 0;
+} /* Alignement, taille, style et couleur du texte + Supression de la bordure naturelle entre le titre et le haut de page */
+
+
+.texte_principal {
+    color: #000000;
+    text-align: center;
+    font-size: 150%;
+    font-family: cursive;
+    font-style: italic;
+} /* Couleur, alignement, taille et style du texte de la page principal */
+
+
+img {
+    width: 33%;
+    height: 300px;
+    border-radius: 25px;
+} /* Largeur, hauteur et arrondissement des angles des images */
+
+
+#contact
+{
+    padding: 10px;
+    text-align: center;
+    font-size: 150%;
+    font-family: cursive;
+    font-style: italic;
+    color: #000000;
+} /* Ecart entre avec la bordure, alignement, taille, style et couleur du texte dans les contacts */
+
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+} /* Mettre au centre la table des contacts */
+
+
+/* Sur les pages contenant des quiz */
+
+p{
+    font-size: 150%;
+    font-style: italic;
+    color: #ffffff;
+} /* taille, style et couleur du texte */
+
+
+.titre{
+    color: #ffffff;
+    text-align: center;
+    font-size: 500%;
+    font-family: fantasy;
+    margin-top: 0;
+} /* Couleur, alignement, taille, style du texte et suppression de la marge */
+
+
+#quiz{
+    font-size: 150%;
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+} /* Taille, style et couleur du text dans le quiz */
+
+#option {
+    display: none;
+} /* Affichage des div contenant les choix de réponse */
+
+button{
+    display: block;
+    background-color: #719fee;
+    border-radius: 10px;
+    border: 4px double #1f69ec;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+} /* Modifie le design de tous les boutons */
+
+#g{
+    width: 80px;
+} /* Le bouton qui permet de lancer le quiz */
+
+
+#validation, #next{
+    margin-left: 43%;
+} /* Centrer le bouton qui permet de passer à la question suivante et le bouton qui permet de valider sa réponse */
+
+
+

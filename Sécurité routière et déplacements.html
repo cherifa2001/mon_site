@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sécurité routière et déplacements</title> 
+        <link href="Quizz.css" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+
+<body style="background-image: url(fe_cuisine.jpg); background-size: 100%;">
+    <h1 class="titre">Culture culinaire</h1>
+
+    <div id="go">
+        <p>Bienvenue dans notre quiz sur le theme de la cuisine ! Testez vos connaissances culinaires avec ces questions variées.
+        <br>
+        Attention ! Vous n'aurez que 15 secondes par question.</p>
+        <!-- Affichons la première question en appuyant sur le bouton démarer:-->
+        <button id="g" type="button" onclick="quiz(qcuisine, choix_cuisine)">Go</button>
+    </div>
+
+    
+
+    <div id="quiz">
+        
+        <div id="question"></div>
+        <br>
+        <div class="options"></div>
+        <div class="options"></div>
+        <div class="options"></div>
+        <div class="options"></div>
+        <br>
+        <p id="message"></p>
+        <div id="temps" style="display: none"></div>
+        <br>
+        <button id="validation" type="button" onclick="reponse_cuisine()" style="display: none">Valider</button> 
+        <button id="next" type="button" onclick="quiz(qcuisine, choix_cuisine)" style="display: none">Question suivante</button>
+    </div>
+    
+    <br>
+    <br>
+
+    <div id="back">
+        <p id="score"></p>
+        <p>Si vous voulez faire un autre quiz, vous pouvez en choisir ici :
+        <form action="QUIZ.html">
+            <button type="submit">Retour à la page principale</button>
+        </form>
+        <!--Ou vous pouvez aussi refaire ce quiz. <button type="button" onclick="quiz_chant()">Refaire le quiz</button--></p>
+    </div>
+
+    <div id="Sécurité routière et déplacements"></div>
+
+</body>
+</html>
+
+<script src="quiz.js"></script>
