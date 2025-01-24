@@ -1,7 +1,7 @@
 // Commençons par créer une liste contenant toutes les questions :
-let qchant = ['Quel artiste est surnommé le "Roi du Rock and Roll" ?', 'Sous quel nom est né Elton John ?', 'Quelle chanson emblématique de Queen commence par les mots "Is this the real life, is this just fantasy" ?', 'De quel pays est originaire le groupe ABBA ?', "Quelle chanson d'Elton John a-t-il interprétée lors des funérailles de la princesse Diana en 1997 ?", "Quel est le titre de la chanson de Bob Marley qui appelle à l'unité et à la paix entre les peuples ?", 'Quelle chanteuse a interprété les chansons "Poker face" et "Born This Way" ?']
+let qchant = ['Quelle est la première chose à faire si vous détectez un incendie dans un bâtiment  ?', 'Quel extincteur est le plus adapté pour un feu dorigine électrique ?', 'Que signifie l’acronyme « RIA » en sécurité incendie ?', 'Quel est le numéro d’urgence pour appeler les pompiers en France  ?', " Quelle est la méthode correcte pour utiliser un extincteur ?", " Où ne faut-il jamais stocker un extincteur ?", " Que devez-vous faire si vos vêtements prennent feu ?"]
 // Maintenant on créer une deuxième liste regroupant les listes contenant les options de réponses pour chaque question : [[réponses q1], [réponses q2], ...]
-let choix_chant = [["Elton John", "Elvis Presley", "Freddie Mercury", "Jimi Hendrix"], ["Richard Starkey", "Elton John tout simplement", "Reginald kenneth Dwight", "Tom Hanks"], ["Bohemian Rhapsody", "Radio Ga Ga", "Somebody to Love", "Don't Stop Me Now"], ["Royaume-Uni", "Suède", "États-Unis", "Allemagne"], ["Your Song", "Rocket Man", "Candle in the Wind", "Tiny Dancer"], ["One Love/People Get Ready", "No Woman, No Cry", "Redemption Song", "Stir It Up"], ["Taylor Swift", "Ariana Grande", "Madonna", "Lady Gaga"]]
+let choix_chant = [["Éteindre le feu immédiatement.", " Crier « au feu » et courir.", " Appeler les secours et alerter les occupants. ", " Attendre pour voir si le feu s'éteint tout seul."], [" Extincteur à eau.", "  Extincteur au CO2.", " Extincteur à poudre ABC.", " Extincteur à mousse."], [" Réseau d'Intervention Anti-incendie.", "  Robinet Incendie Armé.", " Régulation Incendie Automatique.", " Réserve d'Intervention Active."], [" 15", "  112", "18", "17"], ["Tirer la goupille, diriger la buse vers le feu, appuyer sur la poignée et balayer la base des flammes.", " Ouvrir l'extincteur, verser son contenu sur le feu.", " Secouer l'extincteur et le lancer sur les flammes.", " Appuyer sur la poignée sans viser précisément."], ["Près d'une sortie.", " Dans un placard fermé à clé. ", " À proximité d'un potentiel départ de feu. ", " Dans un endroit accessible et visible."], ["Courir pour éteindre les flammes.", " Retirer les vêtements immédiatement. ", " S’arrêter, se jeter au sol et rouler pour étouffer les flammes. ", "  Utiliser un extincteur sur vous "]]
 
 // Pareil pour le quiz sur la cuisine
 let qcuisine = ["Quel est l'ingredient principal de la sauce hollandaise ?","Quel est l'ingrédient principal de la sauce béchamel ?", "Quel est le principal ingrédient de la soupe à l'oignon française ?", "A quelle température doit-on cuire le poulet pour qu'il soit considéré comme sur à consommer ?", "Quel est le plat national du Japon", "De quel pays vient la pizza ?", "Qu'appelle-t-on chile ?" ] 
@@ -71,16 +71,16 @@ function quiz(q, choix) {
 
 // Transition entre chaque question (compte les points et ittère l'indicateur de question et le numéro de la question)
 function reponse_chant() {
-    let reponse_q1 = document.getElementsByName("rep")[1].checked; // Récupère la bonne réponse de la question 1
-    let reponse_q2 = document.getElementsByName("rep")[2].checked; // Récupère la bonne réponse de la question 2
-    let reponse_q3 = document.getElementsByName("rep")[0].checked; // Récupère la bonne réponse de la question 3
-    let reponse_q4 = document.getElementsByName("rep")[1].checked; // Récupère la bonne réponse de la question 4
-    let reponse_q5 = document.getElementsByName("rep")[2].checked; // Récupère la bonne réponse de la question 5
-    let reponse_q6 = document.getElementsByName("rep")[0].checked; // Récupère la bonne réponse de la question 6
-    let reponse_q7 = document.getElementsByName("rep")[3].checked; // Récupère la bonne réponse de la question 7
+    let reponse_q1 = document.getElementsByName("rep")[2].checked; // Récupère la bonne réponse de la question 1
+    let reponse_q2 = document.getElementsByName("rep")[1].checked; // Récupère la bonne réponse de la question 2
+    let reponse_q3 = document.getElementsByName("rep")[1].checked; // Récupère la bonne réponse de la question 3
+    let reponse_q4 = document.getElementsByName("rep")[2].checked; // Récupère la bonne réponse de la question 4
+    let reponse_q5 = document.getElementsByName("rep")[0].checked; // Récupère la bonne réponse de la question 5
+    let reponse_q6 = document.getElementsByName("rep")[1].checked; // Récupère la bonne réponse de la question 6
+    let reponse_q7 = document.getElementsByName("rep")[2].checked; // Récupère la bonne réponse de la question 7
     
 
-    let reponse = [[reponse_q1, 1], [reponse_q2, 2], [reponse_q3, 0], [reponse_q4, 1], [reponse_q5, 2], [reponse_q6, 0], [reponse_q7, 3]] // Liste contenant toutes les bonnes réponses et leur positions (1, 2, 3 ou 4) dans les options de réponse
+    let reponse = [[reponse_q1, 2], [reponse_q2, 1], [reponse_q3, 1], [reponse_q4, 4], [reponse_q5, 0], [reponse_q6, 1], [reponse_q7, ]] // Liste contenant toutes les bonnes réponses et leur positions (1, 2, 3 ou 4) dans les options de réponse
     
     if(reponse[num][0] == true) { // Regarde si la bonne réponse a été coché.
         message.textContent = "Bravo !"; // Affiche "Bravo !" si la réponse correspond 
