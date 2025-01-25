@@ -7,9 +7,6 @@ body{
 	 background-image: url("https://img.freepik.com/photos-gratuite/texture-du-materiau-textile_1385-1931.jpg?t=st=1737762510~exp=1737766110~hmac=0c479b94c3c08dcf1fcd578ccb1ba137d744b852f6eb4e8c3931549883f8826d&w=740");
 }
 
-/*body {
-    background-image: url("https://static3.depositphotos.com/1003579/177/i/450/depositphotos_1772683-stock-photo-watercolor-paper-texture.jpg");
-} /* Image de fond de la page principale */
 
 
 #titre_principal {
@@ -77,7 +74,9 @@ p{
     font-size: 150%;
     font-style: italic;
     text-align: center;
-    color: #2f0b0b;
+    color:greenyellow;
+	font-size: 2em; /* Augmente la taille du texte (3 fois plus grand que la taille par défaut) */
+    font-weight: bold;
 } /* Taille, style et couleur du text dans le quiz */
 
 #option {
@@ -95,6 +94,10 @@ font-size: 22px; /* Taille légèrement plus grande pour plus de lisibilité */
 padding: 12px; /* Espacement interne légèrement augmenté */
 width: 220px; /* Largeur légèrement plus grande pour mieux remplir l'espace */
 cursor: pointer;
+transform: scale(1.2);
+background-color: #1e2a1e;
+transform: scale(0.95);
+transition: transform 0.3s ease
 } /* Modifie le design de tous les boutons */
 
 #g{
